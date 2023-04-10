@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\section*{Alternative markings}
+
+\begin{align*}
+	f'(x) = \frac{d f(x)}{d x} = \frac{\partial f(x)}{\partial x}
+\end{align*}
+
+\section*{Definitions}
+
+\begin{align*}
+	f'(x) &:= \lim_{\varepsilon \rightarrow 0} \frac{f(x+\varepsilon) - f(x)}{\varepsilon}\\
+	f'(x) &:= \lim_{\chi \rightarrow x} \frac{f(\chi) - f(x)}{\chi - x}
+\end{align*}
+
+\section*{Rules}
+
+\begin{enumerate}
+\item Sum rule: $[f(x)+g(x)]' = f'(x) + g'(x)$
+\item Constant multiple rule: $[cf(x)]' = c f'(x)$
+\item Function multiplication rule: $ [f(x) \cdot g(x)]' = f'(x)\cdot g(x) + f(x) \cdot g'(x)$
+\item Chain rule: $\{f[g(x)]\}' = f'[g(x)]g'(x)$
+\end{enumerate}
+
+\section*{Notable derivatives}
+
+\begin{tabular}{|c|c|}
+\hline
+Function & Derivative \\
+\hline
+$f(x) = c$ (where $c$ is a constant) & $f'(x) = 0$ \\
+\hline
+$f(x) = x^n$ (where $n$ is any real number) & $f'(x) = nx^{n-1}$ \\
+\hline
+$f(x) = e^x$ & $f'(x) = e^x$ \\
+\hline
+$f(x) = \ln(x)$ & $f'(x) = \frac{1}{x}$ \\
+\hline
+$f(x) = \sin(x)$ & $f'(x) = \cos(x)$ \\
+\hline
+$f(x) = \cos(x)$ & $f'(x) = -\sin(x)$ \\
+\hline
+$f(x) = \tan(x)$ & $f'(x) = \sec^2(x)$ \\
+\hline
+\end{tabular}
+
+\section*{Practice}
+
+Prove the following using the rules and notable derivatives:
+
+\begin{align*}
+	&(x^3)' = 3 \cdot x^2 \\
+	&(4\cdot x^3 + 13 \cdot x^2 + 12 \cdot x + 5)' = 12\cdot x^2 + 26 \cdot x + 12 \\
+	&\sin'(\cos(x)) = -\cos(\cos(x))\sin(x)	\\
+	&(\frac{1}{x})'=-\frac{1}{x^2} \\
+	&\left[\frac{f(x)}{g(x)}\right]' =  \left[f(x) \cdot \frac{1}{g(x)}\right]' = \frac{f'(x)g(x) - f(x)g'(x)}{g^2(x)ˇ}
+\end{align*}
+
+\end{document}
